@@ -10,7 +10,7 @@ public class DataMapperClient {
         // Заберет из базы и добавит в map
         userMapper.findById(1).ifPresentOrElse(System.out::println, () -> System.out.println("User not found"));
 
-        // Отдваст из map
+        // Отдаст из map
         userMapper.findById(3).ifPresentOrElse(System.out::println, () -> System.out.println("User not found"));
     }
 }
